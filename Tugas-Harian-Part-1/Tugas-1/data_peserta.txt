@@ -1,0 +1,6 @@
+Data Peserta Sanbercode Bootcamp ReactJS
+1. Nama                             : Nuno Alwi Azimah
+2. Email                            : Nunoalwi@gmail.com
+3. Sistem Operasi yang digunakan    : Windows 10
+4. Akun Gitlab                      : Nuno Alwi Azimah | @kazuno
+5. Akun Telegram                    : 089518312722 | Kazuno
