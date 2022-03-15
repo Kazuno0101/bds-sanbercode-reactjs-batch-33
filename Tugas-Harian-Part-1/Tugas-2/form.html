@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nuno Alwi Azimah - Form</title>
+	</head>
+	<body>
+		<div id="Header">
+			<img src="asset/img/logo.png" alt="logo" />
+			<h1>SanberDev | Santai Berkualitas Development</h1>
+			<p>Halo! Saya <b>Nuno Alwi</b>, Dari Bootcamp Digital Skill Batch ke-33</p>
+			<hr />
+		</div>
+		<div id="content">
+			<h1>Register Akun Baru!</h1>
+			<h3>Isilah form dibawah ini</h3>
+			<form action="" method="POST">
+				<p for="first_name">First Name:</p>
+				<input type="text" id="first_name" name="first_name" />
+
+				<p for="last_name">Last Name:</p>
+				<input type="text" id="last_name" name="last_name" />
+
+				<p>Gender:</p>
+				<input type="radio" id="male" name="gender" /> <label for="male">Male</label> <input type="radio" id="female" name="gender" />
+				<label for="female">Female</label> <input type="radio" id="other" name="gender" /> <label for="other">Other</label>
+
+				<p for="nationality">Nationality</p>
+				<select id="nationality" name="nationality">
+					<option value="indonesia">Indonesia</option>
+					<option value="japan">Japan</option>
+					<option value="usa">USA</option>
+					<option value="arab">Arab</option>
+				</select>
+
+				<p for="fokus">Sedang Fokus Belajar</p>
+				<select id="fokus" name="fokus">
+					<option value="reactjs">React.js</option>
+					<option value="vuejs">Vue.js</option>
+					<option value="laravel">Laravel</option>
+				</select>
+
+				<p>Language Spoken:</p>
+				<input type="checkbox" id="indonesia" name="language" /> <label for="indonesia">indonesia</label> <input type="checkbox" id="sunda" name="language" />
+				<label for="sunda">Sunda</label> <input type="checkbox" id="english" name="language" /> <label for="english">English</label>
+
+				<p>Deskripsi Diri Saya:</p>
+				<textarea name="dataDiri" rows="3" cols="30"> </textarea>
+
+				<br /><br />
+				<button type="submit">Register</button>
+			</form>
+		</div>
+	</body>
+</html>
