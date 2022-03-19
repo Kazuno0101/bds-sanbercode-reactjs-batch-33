@@ -1,0 +1,206 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Poppins';
+	/* font-size: 22px; */
+}
+
+.container {
+	width: 780px;
+	margin: 30px auto 80px auto;
+}
+
+.container .container_hero {
+	color: white;
+	background-color: #146356;
+	display: flex;
+	padding: 40px 30px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.container .container_hero h1 {
+	padding-right: 20%;
+}
+
+.container .container_bottom p a {
+	margin-left: 10px;
+}
+
+.container .container_bottom p a button {
+	padding: 3px;
+}
+
+.container .container_support {
+	text-align: center;
+}
+
+.container .container_support .logo {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.container .container_features_title h1,
+.container .container_pricing_title h1 {
+	text-decoration: underline solid black 5px;
+	text-underline-offset: 15px;
+}
+
+.container .container_features {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.container .container_features .container_features-card h3 {
+	padding: 0 50px;
+	margin: 20px auto;
+}
+
+.container .container_features .container_features-card p {
+	font-size: 12px;
+}
+
+.container .container_pricing {
+	margin-top: 80px;
+	background-color: #21313a;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px;
+}
+
+.container .container_pricing .container_pricing-card {
+	padding: 10px 15px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	justify-content: space-around;
+	font-size: 12px;
+	height: 150px;
+}
+
+.container .container_pricing .container_pricing-card ul {
+	text-align: left;
+	font-size: 10px;
+}
+/* Buatlah styling setiap section dibawah ini */
+
+/* Aturlah breakpoint dibawah ini menggunakan media queries agar responsive dibawah sini*/
+
+@media only screen and (max-width: 480px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		display: grid;
+		place-items: center;
+	}
+
+	.container .container_hero {
+		flex-direction: column;
+	}
+
+	.container .container_hero p {
+		text-align: right;
+	}
+
+	.container .container_bottom p {
+		padding-left: 20px;
+	}
+
+	.container .container_bottom p a {
+		margin-left: -2px;
+	}
+
+	.container .container_support .logo {
+		grid-template-columns: 1fr;
+	}
+
+	.container .container_support .logo img {
+		margin: 25px 0;
+		transform: scale(1.5);
+	}
+
+	.container .container_features {
+		grid-template-columns: 1fr;
+	}
+
+	.container .container_features .container_features-card p {
+		padding: 0 20px;
+	}
+
+	.container .container_features_title h1,
+	.container .container_pricing_title h1 {
+		margin-top: 50px;
+	}
+
+	.container .container_pricing {
+		flex-direction: column;
+	}
+
+	.container .container_pricing .container_pricing-card {
+		margin: 25px 0;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		display: grid;
+		place-items: center;
+	}
+
+	.container .container_hero {
+		flex-direction: column;
+	}
+
+	.container .container_hero p {
+		text-align: right;
+	}
+
+	.container .container_bottom {
+		margin-left: -300px;
+		margin-bottom: 50px;
+	}
+
+	.container .container_bottom p a {
+		margin-left: -2px;
+	}
+
+	.container .container_support .logo {
+		grid-template-columns: 1fr;
+	}
+
+	.container .container_support .logo img {
+		margin: 25px 0;
+		transform: scale(1.5);
+	}
+
+	.container .container_features {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.container .container_features_title h1,
+	.container .container_pricing_title h1 {
+		margin-top: 50px;
+	}
+
+	.container .container_pricing {
+		flex-direction: column;
+	}
+
+	.container .container_pricing .container_pricing-card {
+		margin: 25px 0;
+	}
+}
