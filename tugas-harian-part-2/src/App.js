@@ -3,6 +3,7 @@ import './App.css';
 import Logo from '../src/Assets/image/logo.png';
 
 import List from './tugas-11/tugas11';
+import Peserta from './tugas-12/tugas12';
 
 // const ListComponent = (props) => {
 // 	return (
@@ -15,7 +16,8 @@ import List from './tugas-11/tugas11';
 
 function App() {
 	return (
-		// <div className="card">
+		<>
+			{/* // <div className="card">
 		// 	<img src={Logo} />
 		// 	<p>THINGS TO DO</p>
 		// 	<small>During Bootcamp in Sanbercode</small>
@@ -28,11 +30,11 @@ function App() {
 		// 	<ListComponent listData="Belajar ReactJS Advance" />
 
 		// 	<button>Send</button>
-		// </div>
+		// </div> */}
 
-		<div>
-			<List />
-		</div>
+			{/* <List /> */}
+			<Peserta />
+		</>
 	);
 }
 
