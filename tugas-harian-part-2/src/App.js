@@ -3,7 +3,8 @@ import './App.css';
 import Logo from '../src/Assets/image/logo.png';
 
 import List from './tugas-11/tugas11';
-import Peserta from './tugas-12/tugas12';
+import Peserta from './tugas-13/tugas13';
+import Mahasiswa from './tugas-13/Mahasiswa';
 
 // const ListComponent = (props) => {
 // 	return (
@@ -33,7 +34,8 @@ function App() {
 		// </div> */}
 
 			{/* <List /> */}
-			<Peserta />
+			{/* <Peserta /> */}
+			<Mahasiswa />
 		</>
 	);
 }
