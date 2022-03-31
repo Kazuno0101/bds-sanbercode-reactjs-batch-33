@@ -6,7 +6,7 @@ import { DarkModeContext } from './navContext';
 
 const MahasiswaList = () => {
 	const { mahasiswa, setMahasiswa, setInputName, setInputMapel, setInputNilai, setCurrentId } = useContext(MahasiswaContext);
-	const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+	const { darkMode, title, toggleDarkMode } = useContext(DarkModeContext);
 
 	const handleDarkMode = () => {
 		toggleDarkMode();
@@ -58,8 +58,8 @@ const MahasiswaList = () => {
 		<>
 			{mahasiswa !== null && (
 				<div className="card">
-					<button className={darkMode} onClick={handleDarkMode}>
-						Dark Mode
+					<button className={darkMode ? 'btn-darkMode btn-light' : 'btn-darkMode btn-dark'} onClick={handleDarkMode}>
+						{title}
 					</button>
 					<h1>Daftar Peserta Lomba</h1>
 					<button className="btn-list" onClick={handleClick}>

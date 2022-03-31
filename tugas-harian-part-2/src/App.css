@@ -141,3 +141,32 @@ nav {
 	background-color: teal;
 	color: white;
 }
+
+.btn-darkMode {
+	border-radius: 20px;
+	margin: auto;
+}
+
+.btn-dark {
+	background-color: rgb(0, 46, 46);
+}
+
+.btn-dark:hover {
+	background-color: rgb(0, 92, 92);
+	cursor: pointer;
+}
+.btn-dark:active {
+	background-color: rgb(0, 92, 92);
+}
+
+.btn-light {
+	background-color: teal;
+}
+
+.btn-light:hover {
+	background-color: rgb(5, 179, 179);
+	cursor: pointer;
+}
+.btn-light:active {
+	background-color: rgb(5, 179, 179);
+}
