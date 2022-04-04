@@ -67,25 +67,25 @@ const MahasiswaList = () => {
 						<button className="btn-list" onClick={handleClick}>
 							Tambah Data Mahasiswa
 						</button>
-						<table className="table p-4 bg-white shadow rounded-lg">
+						<table className="table p-4 bg-white rounded-lg shadow">
 							<thead>
 								<tr>
-									<th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+									<th className="p-4 font-normal text-gray-900 border dark:border-dark-5 whitespace-nowrap">
 										No
 									</th>
-									<th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+									<th className="p-4 font-normal text-gray-900 border dark:border-dark-5 whitespace-nowrap">
 										Nama
 									</th>
-									<th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+									<th className="p-4 font-normal text-gray-900 border dark:border-dark-5 whitespace-nowrap">
 										Mata Kuliah
 									</th>
-									<th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+									<th className="p-4 font-normal text-gray-900 border dark:border-dark-5 whitespace-nowrap">
 										Nilai
 									</th>
-									<th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+									<th className="p-4 font-normal text-gray-900 border dark:border-dark-5 whitespace-nowrap">
 										Indeks Nilai
 									</th>
-									<th className="border p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
+									<th className="p-4 font-normal text-gray-900 border dark:border-dark-5 whitespace-nowrap">
 										Aksi
 									</th>
 								</tr>
@@ -97,34 +97,34 @@ const MahasiswaList = () => {
 											key={index}
 											className="text-gray-700"
 										>
-											<td className="border p-4 dark:border-dark-5">
+											<td className="p-4 border dark:border-dark-5">
 												{index +
 													1}
 											</td>
-											<td className="border p-4 dark:border-dark-5">
+											<td className="p-4 border dark:border-dark-5">
 												{
 													item.name
 												}
 											</td>
-											<td className="border p-4 dark:border-dark-5">
+											<td className="p-4 border dark:border-dark-5">
 												{
 													item.course
 												}
 											</td>
-											<td className="border p-4 dark:border-dark-5">
+											<td className="p-4 border dark:border-dark-5">
 												{
 													item.score
 												}
 											</td>
-											<td className="border p-4 dark:border-dark-5">
+											<td className="p-4 border dark:border-dark-5">
 												{indeksNIlai(
 													item.score
 												)}
 											</td>
-											<td className="flex justify-evenly border p-4 dark:border-dark-5">
+											<td className="flex p-4 border justify-evenly dark:border-dark-5">
 												<button
 													type="button"
-													className="w-auto py-2 px-4  bg-white-600 hover:bg-white focus:ring-white focus:ring-offset text-black transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+													className="w-auto px-4 py-2 text-base font-semibold text-center text-black transition duration-200 ease-in rounded-lg shadow-md bg-white-600 hover:bg-white focus:ring-white focus:ring-offset focus:outline-none focus:ring-2 focus:ring-offset-2 "
 													onClick={
 														handleEdit
 													}
@@ -136,7 +136,7 @@ const MahasiswaList = () => {
 												</button>
 												<button
 													type="button"
-													className="w-auto py-2 px-4  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+													className="w-auto px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-red-600 rounded-lg shadow-md hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2 "
 													onClick={
 														handleDelete
 													}
@@ -155,7 +155,7 @@ const MahasiswaList = () => {
 					</div>
 					{success === true && (
 						<div
-							className="absolute bottom-24 left-8 bg-green-200 border-green-600 text-green-600 border-l-4 p-4 w-52"
+							className="absolute p-4 text-green-600 bg-green-200 border-l-4 border-green-600 bottom-24 left-8 w-52"
 							role="alert"
 						>
 							<p className="font-bold">Success</p>
@@ -163,7 +163,7 @@ const MahasiswaList = () => {
 						</div>
 					)}
 					{hapus === true && (
-						<div className="absolute bottom-24 left-8 bg-red-200 border-red-600 text-red-600 border-l-4 p-4 w-52" role="alert">
+						<div className="absolute p-4 text-red-600 bg-red-200 border-l-4 border-red-600 bottom-24 left-8 w-52" role="alert">
 							<p className="font-bold">Success</p>
 							<p>Data has been deleted.</p>
 						</div>

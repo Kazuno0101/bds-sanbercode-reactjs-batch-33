@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import { DarkModeContext } from './navContext';
+import Cookies from 'js-cookie';
+import { useHistory } from 'react-router-dom';
 
 const Nav = () => {
 	const { darkMode } = useContext(DarkModeContext);
+	let history = useHistory();
 
 	return (
 		<nav className={darkMode ? 'nav-light' : 'nav-dark'}>
@@ -26,6 +29,28 @@ const Nav = () => {
 			<Link className="linkNav" to="/tugas15">
 				Tugas 15
 			</Link>
+			{!Cookies.get('token') && (
+				<>
+					<Link className="linkNav" to="/register">
+						Register
+					</Link>
+					<Link className="linkNav" to="/login">
+						Login
+					</Link>
+				</>
+			)}
+
+			{Cookies.get('token') && (
+				<span
+					className="font-bold text-white"
+					onClick={() => {
+						Cookies.remove('token');
+						history.push('/login');
+					}}
+				>
+					Logout
+				</span>
+			)}
 		</nav>
 	);
 };
