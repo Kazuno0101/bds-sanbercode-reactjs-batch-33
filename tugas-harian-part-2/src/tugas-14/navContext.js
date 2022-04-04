@@ -7,7 +7,7 @@ function DarkModeProvider(props) {
 	const [title, setTitle] = useState('Dark Mode');
 	const toggleDarkMode = () => {
 		setDarkMode(!darkMode);
-		if (title == 'Dark Mode') {
+		if (title === 'Dark Mode') {
 			setTitle('Light Mode');
 		} else {
 			setTitle('Dark Mode');

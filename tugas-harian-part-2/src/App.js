@@ -6,6 +6,7 @@ import List from './tugas-11/tugas11';
 import Peserta from './tugas-12/tugas12';
 import Mahasiswa from './tugas-13/Mahasiswa';
 import Routes from './tugas-14/Mahasiswa';
+import Routes2 from './tugas-15/Mahasiswa';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { DarkModeProvider } from './tugas-14/navContext';
 
@@ -30,6 +31,9 @@ function App() {
 						</Route>
 						<Route path="/tugas14">
 							<Routes />
+						</Route>
+						<Route path="/tugas15">
+							<Routes2 />
 						</Route>
 					</Switch>
 				</Router>

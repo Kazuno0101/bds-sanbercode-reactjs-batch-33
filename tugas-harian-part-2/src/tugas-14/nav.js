@@ -23,6 +23,9 @@ const Nav = () => {
 			<Link className="linkNav" to="/tugas14">
 				Tugas 14
 			</Link>
+			<Link className="linkNav" to="/tugas15">
+				Tugas 15
+			</Link>
 		</nav>
 	);
 };
