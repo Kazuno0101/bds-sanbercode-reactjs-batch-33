@@ -26,7 +26,8 @@ const Login = () => {
 		axios.post(`https://backendexample.sanbersy.com/api/user-login`, { email, password }).then((res) => {
 			let { token } = res.data;
 			Cookies.set('token', token);
-			history.push('/');
+			// history.push('/');
+			console.log(res.data);
 			alert('Berhasil Masuk');
 		});
 	};

@@ -22,7 +22,6 @@ const MobileFormContent = () => {
 
 	useEffect(() => {
 		if (currentId != null) {
-			alert('bisa');
 			axios.get(`https://backendexample.sanbercloud.com/api/mobile-apps/${currentId}`).then((res) => {
 				let data = res.data;
 				setInput([
